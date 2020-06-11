@@ -1,0 +1,8 @@
+FROM python:3.6-stretch
+
+COPY . .
+
+RUN apt-get update && apt-get install -y libsasl2-dev libldap2-dev libssl-dev && \
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" > /etc/timezone && \
+    pip install -r requestments.txt -i https://pypi.tuna.tsinghua.edu.cn/simple

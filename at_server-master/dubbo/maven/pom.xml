@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>TestDubbo</groupId>
+    <artifactId>TestDubbo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+
+
+        <!-- 产品核心 开始 -->
+
+        <dependency>
+            <groupId>com.daikuan.oms</groupId>
+            <artifactId>oms-coupon-api</artifactId>
+            <version>1.0.1-RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.daikuan.product</groupId>
+            <artifactId>customercenter-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.daikuan.product</groupId>
+            <artifactId>customercenter-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+        <!-- 产品核心 结束 -->
+
+
+        <!-- 风控核心 开始 -->
+        <dependency>
+            <groupId>com.loanking.galaxy</groupId>
+            <artifactId>galaxy-domain</artifactId>
+            <version>1.3.24-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.loanking.galaxy</groupId>
+            <artifactId>galaxy-facade</artifactId>
+            <version>1.3.24-SNAPSHOT</version>
+        </dependency>
+        
+        
+        <dependency>
+            <artifactId>skynet-engine-api</artifactId>
+            <groupId>com.loanking</groupId>
+            <version>1.2.0-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>com.loanking</groupId>
+          <artifactId>rota-common</artifactId>
+          <version>0.0.2-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+          <groupId>com.skynet.credit</groupId>
+          <artifactId>skynet-credit-line-api</artifactId>
+          <version>1.0.1-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+        <groupId>com.loanking</groupId>
+        <artifactId>skynet-door-domain</artifactId>
+        <version>1.3.3</version>
+        </dependency>
+        <dependency>
+        <groupId>com.loanking</groupId>
+        <artifactId>skynet-door-facade</artifactId>
+        <version>1.3.3</version>
+        </dependency>
+        
+        <!-- 风控核心 结束 -->
+        
+
+        <!-- 交易核心 开始 -->
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>business-service-api</artifactId>
+            <version>0.0.4-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>member_api</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>interest-service-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>bill-service-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>base-common</artifactId>
+            <version>1.0.3-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>seal-service-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>business-service-api</artifactId>
+            <version>2.1.0-SNAPSHOT</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.hexin</groupId>
+            <artifactId>product-config-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- 交易核心 结束 -->
+         
+        <!-- 平台服务 开始 -->
+        <dependency>
+            <groupId>com.daikuan.oms</groupId>
+            <artifactId>oms-dubbo-api</artifactId>
+            <version>1.1.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.daikuan.platform.oms</groupId>
+            <artifactId>oms-coupon-api</artifactId>
+            <version>1.3.0-SNAPSHOT</version>
+        </dependency>
+        <!-- 平台服务 结束 -->
+    </dependencies>
+</project>

@@ -1,0 +1,13 @@
+Faker==1.0.0
+pymongo==3.5.1
+PyMySQL==0.9.3
+redis==2.10.6
+requests==2.20.1
+robotframework==3.0.4
+robotframework-databaselibrary==1.0.1
+robotframework-mongodblibrary==0.3.4
+robotframework-requests==0.5.0
+robotframework-ride==1.5.2.1
+pyDes==2.0.1
+allpairs==2.0.1
+pyyaml==5.1.1

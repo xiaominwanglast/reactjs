@@ -1,0 +1,30 @@
+FROM dhub.2345intra.com/ci/python:jdk-alpine
+
+COPY . .
+
+ENV PYTHONUNBUFFERED 0
+
+# 修改本机时间和时区
+# 安装必要的必备库
+# 修改settings.online.py为settings.py
+RUN apk add tzdata dosfstools git openssh && \
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" > /etc/timezone && \
+    pip install -r requestments.txt && \
+    mv Tower/settings.online.py Tower/settings.py && \
+    chmod a+x databaseapp/soar/* && \
+	dos2unix entrypoint.sh && chmod +x entrypoint.sh
+
+# 挂载附件
+VOLUME /opt/app/files
+
+# 保留端口
+EXPOSE 7890
+
+# 启动命令 -u 无缓冲
+
+#RUN wget http://gitea.2345intra.com/TestTeam/hosts/raw/branch/master/hosts
+#RUN cat hosts >> /etc/hosts
+#CMD ["python", "manage.py", "runserver", "0.0.0.0:7890"]
+
+ENTRYPOINT ["./entrypoint.sh"]
